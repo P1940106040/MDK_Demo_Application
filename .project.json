@@ -8,7 +8,26 @@
 	"CF": {
 		"Target": "https://api.cf.eu10.hana.ondemand.com",
 		"Organization": "d4ea35ce-9cb9-4aef-a690-1a94d1e00c04",
-		"Space": "b4c5c8db-4c98-4f91-a083-91ac1865f90f"
+		"Space": "b4c5c8db-4c98-4f91-a083-91ac1865f90f",
+		"Deploy": {
+			"Destination": [
+				{
+					"CF": "com.mdk.style.demo.mobile.connectivity.destination.name",
+					"MDK": "com.mdk.style.demo.mobile.connectivity.destination.name",
+					"URL": ""
+				}
+			],
+			"Name": "ns.MDKDemoApp",
+			"Version": "1.0.0",
+			"SourceMap": true,
+			"StandaloneRouter": true,
+			"WebClient": {
+				"Dev": false,
+				"Version": "5.0.0",
+				"URL": "https://mdk-webclient-runtime.cfapps.eu10.hana.ondemand.com/runtime-5.0.0/"
+			},
+			"URL": "https://couldfoundryruntimeorgname-mobileservicespacename-nsmdk7ec6d3b3.cfapps.eu10.hana.ondemand.com/nsMDKDemoApp/index.html"
+		}
 	},
 	"MobileService": {
 		"Type": "standard",
