@@ -8,7 +8,8 @@ export default function PromotionalItemsQO(context) {
 			}
 			skip = cd.PromoSkip;
 		}
-		let qo = `$skip=${cd.PromoSkip}&$top=10`;
+        //let qo = `$skip=${cd.PromoSkip}&$top=10`;
+        let qo = `$skip=0&$top=10`;
 		return qo;
 	});
 }

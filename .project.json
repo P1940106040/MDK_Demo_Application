@@ -3,7 +3,7 @@
 	"Onboarding": {
 		"Schema": "sapmobilesvcs",
 		"TimeZone": "UTC",
-		"URL": "sapmobilesvcs://?AppId=MDKDEMO&ClientId=fc0e33bb-9a78-4015-9a52-a3f18fe08602&ServerUrl=https://75c34e16trial-mobileservicespacename-mdkdemo.cfapps.eu10.hana.ondemand.com&SapCloudPlatformEndpoint=https://75c34e16trial-mobileservicespacename-mdkdemo.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://75c34e16trial-mobileservicespacename-mdkdemo.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://75c34e16trial-mobileservicespacename-mdkdemo.cfapps.eu10.hana.ondemand.com&TokenUrl=https://75c34e16trial-mobileservicespacename-mdkdemo.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
+		"URL": "sapmobilesvcs://?AppId=Demo&ClientId=5d458479-8fa2-4b3d-8bae-4898185c6efb&ServerUrl=https://75c34e16trial-mobileservicespacename-demo.cfapps.eu10.hana.ondemand.com&SapCloudPlatformEndpoint=https://75c34e16trial-mobileservicespacename-demo.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://75c34e16trial-mobileservicespacename-demo.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://75c34e16trial-mobileservicespacename-demo.cfapps.eu10.hana.ondemand.com&TokenUrl=https://75c34e16trial-mobileservicespacename-demo.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
 	},
 	"CF": {
 		"Target": "https://api.cf.eu10.hana.ondemand.com",
@@ -12,29 +12,32 @@
 		"Deploy": {
 			"Destination": [
 				{
-					"CF": "com.sap.edm.sampleservice.v2",
-					"MDK": "com.sap.edm.sampleservice.v2",
+					"CF": "Demo",
+					"MDK": "Demo",
 					"URL": ""
 				}
 			],
-			"Name": "nsnew.MDKDemo",
+			"Name": "ns.MDKDemoApp",
 			"Version": "1.0.0",
-			"SourceMap": true,
 			"StandaloneRouter": true,
 			"WebClient": {
 				"Dev": false,
 				"Version": "5.0.0",
 				"URL": "https://mdk-webclient-runtime.cfapps.eu10.hana.ondemand.com/runtime-5.0.0/"
 			},
-			"URL": "https://couldfoundryruntimeorgname-mobileservicespacename-nsnewm796e6da.cfapps.eu10.hana.ondemand.com/nsnewMDKDemo/index.html"
+			"URL": "https://couldfoundryruntimeorgname-mobileservicespacename-nsmdk7ec6d3b3.cfapps.eu10.hana.ondemand.com/nsMDKDemoApp/index.html"
 		}
 	},
 	"MobileService": {
 		"Type": "standard",
 		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/d4ea35ce-9cb9-4aef-a690-1a94d1e00c04/space/b4c5c8db-4c98-4f91-a083-91ac1865f90f",
-		"AppId": "MDKDEMO",
+		"AppId": "Demo",
 		"Destination": [
-			"com.sap.edm.sampleservice.v2"
+			"com.sap.edm.sampleservice.v2",
+			"Demo"
 		]
+	},
+	"Build": {
+		"SourceMap": true
 	}
 }
